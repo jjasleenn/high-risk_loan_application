@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1762235541864" clover="3.2.0">
-  <project timestamp="1762235541864" name="All files">
+<coverage generated="1762238792935" clover="3.2.0">
+  <project timestamp="1762238792936" name="All files">
     <metrics statements="63" coveredstatements="61" conditionals="12" coveredconditionals="6" methods="10" coveredmethods="10" elements="85" coveredelements="77" complexity="0" loc="63" ncloc="63" packages="6" files="12" classes="12"/>
     <package name="dist.src.api.v1.constants">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -71,7 +71,7 @@
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="httpstatuscodes.ts" path="C:\Users\jjasl\high-risk_loan_application\src\api\v1\constants\httpstatuscodes.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.api.v1.errors">
