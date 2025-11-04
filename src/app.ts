@@ -1,0 +1,28 @@
+import express from "express";   
+import { accessLogger, errorLogger, consoleLogger } from "./api/v1/middleware/errorlogger";
+import errorHandler from "./api/v1/middleware/errorHandler";
+import loanroutes from "./api/v1/routes/loanroutes";
+
+const app = express();
+
+// Logging middleware (should be applied early in the middleware stack)
+if (process.env.NODE_ENV === "production") {
+    // In production, log to files
+    app.use(accessLogger);
+    app.use(errorLogger);
+} else {
+    // In development, log to console for immediate feedback
+    app.use(consoleLogger);
+}
+
+// Body parsing middleware
+app.use(express.json());
+
+// API Routes
+
+app.use("/api/v1/loans", loanroutes);
+
+// Global error handler (must be last)
+app.use(errorHandler);
+
+export default app;
